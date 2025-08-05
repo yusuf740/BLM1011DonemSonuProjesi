@@ -1,6 +1,53 @@
--------------------------TRİVERSİ-------------------------
+## 🎮 TRIVERSİ
 
-Bu oyun reversi oyunun 3 kişilik versiyonudur. 
-kurallar reversi oyunundan biraz farklı olmakla beraber reversi oyununda olduğu gibi ortada 2 siyah ve 2 beyaz taşla başlamak yerine ilk oyuncu(kırmızı) ilk taşı tahtanın ortasına koyarak oyuna başlar.
-Oyuncular kırmızı,sarı ve mavi olmak üzere 3 renk ile temsil edilmektedir, oyun tahta dolduğunda sona ermektedir. 
-İYİ OYUNLAR.
+Bu oyun, **Reversi** oyununun 3 kişilik versiyonudur. Kurallar klasik Reversi'den farklılık göstermektedir.
+
+### 🧠 Oyun Hakkında
+
+- Oyuna ilk olarak **kırmızı oyuncu (K)** başlar.
+- İlk taş tahtanın ortasına yerleştirilmelidir.
+- Diğer oyuncular sırasıyla **sarı (S)** ve **mavi (M)** taşlarla devam eder.
+- Sıralama: K → S → M → K → ...
+
+### 📋 Kurallar
+
+1. Oyuncular yalnızca **mevcut taşların yanına** taş koyabilir.
+2. Taşlar **dolu hücrelere** yerleştirilemez.
+3. Rakip taşlar **çevrelendiğinde** ele geçirilip oynayan oyuncunun rengine döner.
+4. Oyun **tahta tamamen dolduğunda** sona erer.
+5. En çok taşa sahip olan oyuncu oyunu kazanır.
+6. Eşitlik durumunda oyun **berabere** biter.
+
+### 🛠 Derleme ve Çalıştırma
+
+```bash
+gcc triversi.c -o triversi
+./triversi
+```
+
+> `triversi.c` dosyasını kendi dosya adınıza göre değiştirin.
+
+### 🧾 Örnek Oyun Ekranı
+
+```
+Tahtanın boyutunu giriniz:
+6
+
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+
+K'yi oynamak istedigin yeri (x,y) formatinda gir: 2,2
+...
+```
+
+### 👨‍💻 Oyuncular
+
+- **1. Oyuncu:** Kırmızı (K)
+- **2. Oyuncu:** Sarı (S)
+- **3. Oyuncu:** Mavi (M)
+
+İYİ OYUNLAR 🎉
